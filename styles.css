@@ -4,6 +4,9 @@
     padding:0;
     /* background-color:rgb(54, 52, 52); */
 }
+a{
+    text-decoration:none;
+}
 .navbar{
     margin-bottom:30px;
 }

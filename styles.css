@@ -1,0 +1,249 @@
+*{
+    /* background-color: black; */
+    margin:0;
+    padding:0;
+    /* background-color:rgb(54, 52, 52); */
+}
+.navbar{
+    margin-bottom:30px;
+}
+.accordion-item{
+    color: white;
+    background-color: rgb(33, 32, 32);
+    width:60vw;
+    margin:20px auto;
+    font-size: 30px;
+    border:none;
+    /* padding:10px; */
+}
+.accordion-button{
+    /* border:1px solid white; */
+    color: white;
+    border:none;
+    padding:30px;
+    /* font-weight: ; */
+    /* height:7vh; */
+    width:60vw;
+    font-size: 30px;
+    margin: auto;
+    background-color: rgb(33, 32, 32);
+}
+
+.rightbtn{
+    display:inline;
+    float:right;
+}
+
+.tagline{
+    /* color:red; */
+    text-align:center;
+    width:60vw;
+    margin:auto;
+    color:white;
+    /* padding:100px; */
+    font-weight: bolder;
+    /* font-size:px; */
+}
+.tagline h1{
+    font-size: 90px;
+}
+.faqn button{
+    text-align:left;
+    width:60vw;
+    padding-left:40px;
+    height:10vh;
+    font-size: 30px;
+}
+ h5{
+    color:white;
+    font-size: 25px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight: 400;
+}
+.lang{
+    display: inline;
+}
+.btnSE{
+    /* display:inline; */
+    /* float:right; */
+    /* border-radius: 10px; */
+    color:white;
+    border: 1px solid white;
+    margin:10px;
+}
+.btn{
+    color:white;
+    /* border: 1px solid white; */
+    margin:10px;
+}
+.footer{
+    background-color: black;
+}
+.navbar-brand img{
+    margin-left:40px;
+height:110px;
+width:260px;
+}
+.top{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    opacity: 0.9;
+    /* background: url("bg.png") no-repeat center cover; */
+    background-image:url("bg.jpg");
+    /* padding:100px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info{
+    padding: 0px 200px;
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: black;
+    color:white;
+    height: 70vh;
+    margin-top:5px;
+}
+.text{
+    width:50%;
+    margin: 50px;
+    padding-top:150px;
+    padding-bottom:150px;
+    /* font-size: 45px; */
+    /* padding:150px 100px 150px 100px;  */
+}
+.tagline h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom:20px;
+} 
+.tagline h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom:55px;
+}
+
+.tagline h5{
+    font-size: 25px;
+    margin-bottom:0;
+    font-weight: 400;
+} 
+.tagline{
+    margin-top:200px;
+    margin:auto;
+    margin-bottom:40px;
+}
+.Email{
+    margin: 0px auto;
+    height:100px;
+    margin-top:0;
+    margin-bottom:100px;
+    display: flex;
+}
+input[type="text"] {
+    height: 100%;
+    width: 2000px;
+    font-size: 30px;
+    margin-right:0;
+    }
+    .top .Email .getstarted{
+        /* box-sizing: border-box; */
+        height:80%;
+        padding:10px 30px;
+        /* width:150px; */
+        font-size: 30px;
+        background-color: red;
+        color:white;
+        font-weight: bolder;
+        margin-left:0;
+        border:none;
+    }
+.text p{
+    font-size: 35px;
+}
+.image{
+    margin:50px;
+    padding-top:40px;
+    
+    padding-bottom:40px;
+    width:50%;
+    /* padding:150px 100px 150px 100px;  */
+}
+.image img{
+    width:100%;
+    height:100%;
+    /* margin:auto; */
+}
+.faq h1{
+    color:white;
+    margin:40px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+.faq{
+    display:flex;
+    flex-direction: column;
+    /* height:100vh; */
+    margin-top:5px;
+    background-color: black;
+    /* height:80vh; */
+    text-align:center;
+}
+
+.faq .Email .getstarted{
+    /* box-sizing: border-box; */
+    height:80%;
+    padding:10px 30px;
+    /* width:150px; */
+    font-size: 30px;
+    background-color: red;
+    color:white;
+    font-weight: bolder;
+    margin-left:0;
+    border:none;
+}
+.footer{
+    margin-top:5px;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    /* text-align:center; */
+}
+.links{
+    width:50vw;
+    margin:auto;
+    /* margin:25px; */
+}
+.Contact{
+    padding:25px;
+    text-align: center;
+}
+.footer{
+    padding-bottom:20px;
+}
+.grid-item{
+    display:inline;
+}
+.row .col-3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.row{
+    margin-bottom:20px;
+}
+#footerdropdownMenuButton{
+/* margin-left:0px; */
+margin:30px 0;
+text-align:center;
+}
+.accordion-body{
+    font-weight: lighter;
+}
+#FAQEmail{
+    width:50vw;
+    margin:auto;
+}

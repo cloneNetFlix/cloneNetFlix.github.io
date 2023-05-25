@@ -117,3 +117,60 @@ downloads the folder into the current directory
 
 url from where we have forked -> upstream url
 git remote add upstream "url"
+
+For changes made in our own forked copy of a project to be visible in the original site, we need to send them pull request(PR), which if accepted,merges commits to origin
+of original website
+
+Once pull request, we cant give pull request again. So, if we commit everything on main branch, like 10 features, it will be very difficult to handle it.
+So creating separate branches allows more pull requests to be made. 1 branch only 1 pull request
+
+if we remove a committ from local repository, but online repository has that change, and commits are interlinked, we need to force push this.
+git push origin kunal -f ->(force push)
+
+if changes made to main branch, to be reflected to forked copy, we can click on fetch upstream button, or
+
+git fetch --all --prune
+
+fetch commits from all branches, prune(even deleted committs are changed)
+
+now reset main branch of origin to main branch of upstream
+git reset --hard upstream/main
+
+to make these reflect in the website repository-> push these changes to the online repository
+git push origin main
+
+
+make one more change in main branch (online repository upstream url)
+to make them reflect here, do
+git pull upstream main
+
+
+now to push it to our online repository
+git push origin main
+
+
+combine all commits into one.
+git reset "commit id" of previous commit
+bring them into stage, and do one commit.
+
+or use rebase command
+git rebase -i commit id
+-i -> interactive environment
+
+now all commits can be either pick or squash
+Now, if we give squash -> all commits given as squash are merged into the just recent commit set as pick.
+pick-> im taking this commit.
+
+esc :x
+allows to add message to squashed commit.
+commits merged
+
+:x new squashed commit with new message appears
+
+git reset commit id
+undos changes
+git reset --hard commit id -> destroys the changes.
+
+
+merge conflicts -> conflict due to changes made to same line number by different people -> whose pull request should i merge.
+we need to manually resolve the conflict, my overriding one's changes while retaining others'

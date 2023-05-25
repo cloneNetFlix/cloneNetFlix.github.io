@@ -1,0 +1,119 @@
+Saving the history of the project, how the project was, on previous day etc. which person made which change in which project
+when where etc.
+If we add a feature and want to "redo" or remove it, we can do it using git.
+Github is a platform to host our git repositories. Repository, a folder where all changes are saved.
+Analogy: email-(emailing service)-git.
+gmail,outlook,yahoo- github, bitbucket, gitlab.
+git- version control system allowing us to host, share, contribute to project as a group on online platforms like github
+Terminal- manipulate file structure using commands.
+
+ls- list all files and folders in desktop folder
+mkdir dir-name: makes a directory named 'dir-name'
+cd dir-name: change directory to the directory named 'dir-name'
+all changes like, creating updating are saved into a separate folder named git repository with name '.git'
+
+git init- initialize an empty git repository folder in project folder
+
+ls -a -> shows all the hidden files(files starting with .)
+
+ls .git -> tells us what is inside the .git folder
+
+now on, changes made will be saved.
+
+touch names.txt - create a new file names.txt
+
+git status -> changes that are not saved in the history of the project
+
+to add a file to stage, so that its photo can be taken (so that its activities are saved):
+git add .  -> . all files in current directory that are untracked
+git add filenames -> adds files with given names to the history
+
+git commit -m "message"  -> commit changes with a message
+
+add content to file--> 
+vi fileName
+cat names.txt
+shows entire content inside names.txt
+to bring it on stage
+git add .
+git status 
+will now show modified in green
+to bring out of stage again
+git restore --staged fileName
+
+again git .add
+save changes
+git commit -m "modified"
+
+To see history of all changes
+git log
+
+
+rm -rf fileName  -> removes file
+
+git .add fileName
+
+
+to undo changes
+Eg: if we have commit1, commit2 and commit3, in the order 1,2,3
+we give
+git reset "commitid of commit1"
+undos commits on top of 1, which are 2 and 3
+
+
+
+Saving all work somewhere without making commit, able to retrieve whenever we want.
+git stash
+
+all unsaved changes (which are added using git add , but not yet committed) are saved in master, without committing.
+
+makes the directory exactly like how it was before
+to redo the changes
+git stash pop
+changes appear again.
+
+git stash clear
+those non-committed changes are gone
+
+
+
+when we create a github repository, and add our local project to it
+git remote add origin "url of the github repository"
+
+all repositories that are inside our personal account are named as origin by convention
+
+git remote -v
+shows all url attached to the folder
+
+now changes wont reflect in repository, since we havent shared changes with it
+git push origin master
+push changes to origin url to its main branch
+
+when changes are repeatedly made, all changes are connected like a branch, this is called main branch.
+Whenever we add a new feature, better do it on a separate branch, because unfinalized code may cause error or problems if committed on main branch
+hence commit on separate branch, where users are not directly affected.
+
+create new branch.
+new branch feature.
+
+git checkout feature
+all changes now made will be committed to feature branch (head pointing to feature branch)
+
+after commiting, to merge it with main branch
+git merge feature
+
+push new changes to main branch
+git push origin master
+
+
+Make changes to preexisting github projects
+if we dont have access to account,we cannot directly make changes to it. But we can fork repository into our own account,and make changes to it, which wont reflect in 
+main account's project
+
+
+git clone "url"
+downloads the folder into the current directory
+
+
+url from where we have forked -> upstream url
+git remote add upstream "url"
